@@ -6,7 +6,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const response = await fetch(`https://info-ob52.vercel.app/api/account/?uid=${uid}&region=BD`);
+    const response = await fetch(`https://kamruluidcheck.vercel.app/api/account/?uid=${uid}&region=BD`);
     const data = await response.json();
 
     return res.status(200).json({
